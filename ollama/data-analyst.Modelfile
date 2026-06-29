@@ -1,0 +1,17 @@
+# Tuned local model for reliable tool-calling on a small (4GB) GPU.
+#
+# Built from qwen2.5:7b-instruct with two changes that took the data-analysis eval
+# from ~3/10 to ~8/10 on an RTX 3050 Ti laptop:
+#   temperature 0 -> deterministic; removes the sampling variance that made the
+#                    model randomly skip the tool and answer from memory.
+#   num_ctx 16384 -> above Ollama's small default (Qwen/Ollama guidance: a larger
+#                    window helps tool-calling) but without the heavy KV-cache CPU
+#                    offload of 32k on a 4GB GPU. 32k was measured noticeably slower
+#                    with no correctness gain (the local 7B's ceiling is reasoning,
+#                    not context), so 16k is the pragmatic middle.
+#
+# Build it with:  pnpm ollama:model   (after `pnpm ollama:pull`)
+# Then point the agent at it:  OLLAMA_MODEL=data-analyst  (see .env.example)
+FROM qwen2.5:7b-instruct
+PARAMETER temperature 0
+PARAMETER num_ctx 16384

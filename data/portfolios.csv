@@ -1,0 +1,21 @@
+portfolio_id,portfolio_name,client,sector,status,budget
+PF-01,Acme Expansion,Acme,Healthcare,Active,3676000
+PF-02,Globex Launch,Globex,Financial Services,On Hold,3054000
+PF-03,Initech Transformation,Initech,Media,On Hold,349000
+PF-04,Umbrella Platform,Umbrella,Retail,Active,1279000
+PF-05,Soylent Transformation,Soylent,Media,Active,1750000
+PF-06,Stark Integration,Stark,Technology,Active,444000
+PF-07,Wayne Transformation,Wayne,Media,Completed,3772000
+PF-08,Wonka Analytics,Wonka,Financial Services,Active,1472000
+PF-09,Hooli Platform,Hooli,Technology,Active,2059000
+PF-10,Pied Piper Migration,Pied Piper,Retail,Active,2704000
+PF-11,Cyberdyne Platform,Cyberdyne,Financial Services,Completed,3331000
+PF-12,Tyrell Expansion,Tyrell,Energy,Active,2205000
+PF-13,Massive Dynamic Optimization,Massive Dynamic,Media,On Hold,1913000
+PF-14,Vandelay Modernization,Vandelay,Energy,Completed,1917000
+PF-15,Gekko Capital Migration,Gekko Capital,Manufacturing,Active,860000
+PF-16,Oscorp Integration,Oscorp,Public Sector,Active,1896000
+PF-17,Nakatomi Growth,Nakatomi,Energy,Active,2299000
+PF-18,Bluth Optimization,Bluth,Retail,Active,3622000
+PF-19,Prestige Analytics,Prestige,Media,Active,3114000
+PF-20,Dunder Expansion,Dunder,Financial Services,Active,3615000

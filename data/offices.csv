@@ -1,0 +1,9 @@
+office_id,office_name,city,country,region
+OFF-LON,London,London,UK,EMEA
+OFF-MAN,Manchester,Manchester,UK,EMEA
+OFF-BER,Berlin,Berlin,Germany,EMEA
+OFF-NYC,New York,New York,USA,AMER
+OFF-SFO,San Francisco,San Francisco,USA,AMER
+OFF-TOR,Toronto,Toronto,Canada,AMER
+OFF-SIN,Singapore,Singapore,Singapore,APAC
+OFF-SYD,Sydney,Sydney,Australia,APAC
