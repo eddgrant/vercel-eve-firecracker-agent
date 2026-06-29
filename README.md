@@ -98,8 +98,15 @@ local `.forgevm/` directory, then builds the python+pandas rootfs the microVMs
 boot from. It is idempotent, so it's safe to re-run.
 
 ```bash
-pnpm setup
+pnpm run setup
 ```
+
+> Use `pnpm run setup`, **not** `pnpm setup` — `setup` is a built-in pnpm command
+> (it configures pnpm's own home directory and edits your shell rc file), so
+> `pnpm setup` will *not* run this project's bootstrap script.
+
+When it finishes you should see `Bootstrap complete`, and `.forgevm/bin/` should
+contain `firecracker`, `forgevm`, and `forgevm-agent`.
 
 ### 3. Start the local model
 
@@ -113,12 +120,25 @@ pnpm ollama:pull
 pnpm ollama:model
 ```
 
-Then create your local config and select the model:
+Then create your local config:
 
 ```bash
 cp .env.example .env
-# In .env, uncomment:  OLLAMA_MODEL=data-analyst
 ```
+
+`.env.example` already selects the local `data-analyst` model
+(`OLLAMA_MODEL=data-analyst`), so the copied `.env` works out of the box — just make
+sure you built that model in the step above. To use a different local model or a
+hosted provider instead, edit `.env`.
+
+> **Why port 11435?** Ollama's default port is `11434`. To keep this stack portable,
+> the Dockerised Ollama is published on **`11435`** (the `11435:11434` mapping in
+> `docker-compose.yml`) so it won't clash with an Ollama you may already be running
+> natively on `11434` — the two can coexist, and this project won't disturb your host
+> setup. Eve therefore defaults `OLLAMA_BASE_URL` to `http://localhost:11435` to match.
+> If you have no native Ollama and prefer the standard port, you can remap to
+> `11434:11434` — but then set `OLLAMA_BASE_URL` in `.env` to match, or the agent
+> won't be able to reach the model.
 
 ### 4. Start the ForgeVM daemon
 
@@ -166,7 +186,11 @@ pnpm eval data-analysis   # run a single eval by name
 ```
 
 Evals run the live model, so treat them as a pass-rate signal rather than a hard
-gate, especially on a small local model.
+gate, especially on a small local model. On a 7B local model a single eval can
+take a few minutes per turn — that's slow, not stuck. If `pnpm eval` or `pnpm dev`
+seems to hang indefinitely, the usual cause is that the ForgeVM daemon
+(`pnpm forgevm:serve`) or the Ollama model isn't up; check both, or run with
+`EVE_LOG_LEVEL=debug` to see where the turn is waiting.
 
 ---
 
