@@ -1,0 +1,35 @@
+/tmp
+/out-tsc
+
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.pnp
+.pnp.js
+
+.vscode/*
+.idea/
+
+# Local, machine-specific ForgeVM/firecracker artifacts (binaries, kernel, rootfs, data)
+/.forgevm/*
+# ...but DO track the path-free, portable daemon config (real paths are injected
+# at launch by scripts/forgevm-serve.sh via FORGEVM_* env vars).
+!/.forgevm/forgevm.yaml
+# Eve Workflow SDK local state
+/.workflow-data/
+# Eve build / runtime artifacts
+/.output/
+/.eve/
+/.nitro/
+/.vercel/
+*.tsbuildinfo
+.eve-start.log
+*.log
+# secrets
+.env
+.env.*
+# ...but track the template (no secrets in it)
+!.env.example
+# OS noise
+.DS_Store

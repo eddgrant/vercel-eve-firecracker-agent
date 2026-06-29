@@ -1,0 +1,36 @@
+server:
+  host: "127.0.0.1"
+  port: 7423
+
+providers:
+  # Default to firecracker (real microVMs); KVM is available on this host.
+  default: "firecracker"
+
+  # Kept enabled as a fallback for quick host-only testing.
+  mock:
+    enabled: true
+
+  firecracker:
+    enabled: true
+    default_rootfs: ""
+    # NB: no paths here on purpose. firecracker_path / kernel_path / agent_path /
+    # data_dir are injected at launch by scripts/forgevm-serve.sh via FORGEVM_*
+    # env vars, so this file stays machine-independent and portable for the team.
+    # database.path is injected the same way (out-of-tree runtime state).
+
+defaults:
+  ttl: "30m"
+  image: "forgevm-pandas:latest"
+  memory_mb: 1024
+  vcpus: 1
+  disk_size_mb: 2048
+  pool_size: 0
+  pool_template: ""
+
+auth:
+  enabled: false
+  api_key: ""
+
+logging:
+  level: "info"
+  format: "pretty"

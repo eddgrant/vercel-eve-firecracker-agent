@@ -1,0 +1,57 @@
+# Local LLM for the agent (Ollama), containerised for portability.
+#
+# On this dev machine a native Ollama already owns :11434, so this container
+# is published on :11435 to avoid the clash. Other machines (no native Ollama)
+# can simply remap to "11434:11434".
+#
+#   docker compose up -d ollama
+#   docker compose exec ollama ollama pull llama3.1:8b
+#
+# Eve is pointed here via OLLAMA_BASE_URL (default http://localhost:11435).
+services:
+  ollama:
+    image: ollama/ollama:0.13.0
+    container_name: eve-ollama
+    ports:
+      - "11435:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    # GPU passthrough (nvidia-container-toolkit is installed on this host).
+    # Comment this block out on hosts without an NVIDIA GPU.
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # Trace backend for Eve's OTel instrumentation (see agent/instrumentation.ts).
+  # All-in-one Jaeger: receives OTLP and serves the trace-explorer UI.
+  #   UI:        http://localhost:16686
+  #   OTLP gRPC: localhost:4317   OTLP HTTP: localhost:4318
+  # Point Eve at it with OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
+  #   docker compose up -d jaeger
+  jaeger:
+    image: jaegertracing/all-in-one:1.62.0
+    container_name: eve-jaeger
+    environment:
+      # OTLP receivers are off by default on this tag; turn them on explicitly.
+      COLLECTOR_OTLP_ENABLED: "true"
+    ports:
+      - "16686:16686" # Jaeger UI
+      - "4317:4317"   # OTLP gRPC
+      - "4318:4318"   # OTLP HTTP
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:16686/"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  ollama-data:

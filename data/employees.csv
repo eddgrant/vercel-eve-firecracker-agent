@@ -1,0 +1,151 @@
+employee_id,full_name,title,department,office_id,manager_id,hire_date,salary
+EMP-001,Lucas Carter,Chief Executive Officer,Executive,OFF-LON,,2021-03-13,186500
+EMP-002,Noah Conti,Head of Engineering,Engineering,OFF-MAN,EMP-001,2021-08-02,183500
+EMP-003,Aisha Adeyemi,Head of Consulting,Consulting,OFF-TOR,EMP-001,2016-04-03,168500
+EMP-004,Ivan Fischer,Head of Sales,Sales,OFF-TOR,EMP-001,2021-07-15,159000
+EMP-005,Viktor Ivanov,Head of Operations,Operations,OFF-SFO,EMP-001,2018-11-13,141000
+EMP-006,Alex Moretti,Head of Finance,Finance,OFF-BER,EMP-001,2016-02-14,156500
+EMP-007,Maya Park,Head of People,People,OFF-SYD,EMP-001,2023-07-09,138000
+EMP-008,Priya Weber,People Manager,People,OFF-LON,EMP-007,2020-03-03,90500
+EMP-009,Felix Adeyemi,Operations Associate,Operations,OFF-BER,EMP-005,2020-09-05,65500
+EMP-010,Jordan Singh,Engineering Manager,Engineering,OFF-LON,EMP-002,2021-10-25,131500
+EMP-011,Ethan Yamamoto,Operations Associate,Operations,OFF-SIN,EMP-005,2021-12-14,65000
+EMP-012,Raj Berg,Senior Engineering Associate,Engineering,OFF-SFO,EMP-010,2017-09-08,112500
+EMP-013,Priya Conti,Finance Associate,Finance,OFF-TOR,EMP-006,2020-09-23,83500
+EMP-014,Olivia Vargas,Senior People Associate,People,OFF-SIN,EMP-008,2016-03-26,76000
+EMP-015,Jordan Garcia,Engineering Manager,Engineering,OFF-BER,EMP-002,2019-02-04,129000
+EMP-016,Sofia Patel,Operations Associate,Operations,OFF-BER,EMP-005,2024-04-27,61000
+EMP-017,Layla Flores,Engineering Associate,Engineering,OFF-LON,EMP-015,2022-04-08,92500
+EMP-018,Olivia Weber,Engineering Associate,Engineering,OFF-SIN,EMP-015,2024-05-10,89500
+EMP-019,Hannah Patel,Engineering Associate,Engineering,OFF-TOR,EMP-010,2024-10-14,86000
+EMP-020,Raj Nakamura,Senior Engineering Associate,Engineering,OFF-SYD,EMP-015,2024-04-11,115500
+EMP-021,Sam Marino,Engineering Associate,Engineering,OFF-SYD,EMP-010,2022-08-27,89000
+EMP-022,Tariq Park,Consulting Associate,Consulting,OFF-LON,EMP-003,2024-04-12,77500
+EMP-023,Ava Fischer,Senior People Associate,People,OFF-BER,EMP-008,2019-11-13,84000
+EMP-024,Liam Dubois,Finance Associate,Finance,OFF-SYD,EMP-006,2022-01-16,76000
+EMP-025,Amara Becker,Engineering Manager,Engineering,OFF-LON,EMP-002,2016-12-25,139000
+EMP-026,Diego Kowalski,Senior Consulting Associate,Consulting,OFF-BER,EMP-003,2015-03-22,108000
+EMP-027,Finn Silva,Sales Associate,Sales,OFF-NYC,EMP-004,2017-07-13,69000
+EMP-028,Clara Oliveira,Engineering Associate,Engineering,OFF-MAN,EMP-010,2023-11-19,86500
+EMP-029,Omar Kim,Senior Sales Associate,Sales,OFF-LON,EMP-004,2016-04-02,86000
+EMP-030,Saoirse Okafor,People Manager,People,OFF-TOR,EMP-007,2019-06-01,91500
+EMP-031,Hiro Park,Senior Engineering Associate,Engineering,OFF-BER,EMP-015,2016-10-23,114500
+EMP-032,Taylor Cohen,Finance Associate,Finance,OFF-SYD,EMP-006,2017-04-11,71000
+EMP-033,Olivia Larsson,Senior Engineering Associate,Engineering,OFF-NYC,EMP-010,2023-02-18,104000
+EMP-034,Rosa Larsson,Finance Associate,Finance,OFF-NYC,EMP-006,2024-04-11,79500
+EMP-035,Mateo Nakamura,Finance Associate,Finance,OFF-MAN,EMP-006,2017-03-01,73000
+EMP-036,Jordan Mueller,Consulting Associate,Consulting,OFF-SYD,EMP-003,2017-08-03,76500
+EMP-037,Aisha Becker,People Associate,People,OFF-LON,EMP-008,2017-05-14,61000
+EMP-038,Amara Hassan,Sales Associate,Sales,OFF-LON,EMP-004,2023-08-16,72500
+EMP-039,Finn Sato,Senior Sales Associate,Sales,OFF-SIN,EMP-004,2015-05-26,96500
+EMP-040,Ivan Yamamoto,Engineering Associate,Engineering,OFF-LON,EMP-025,2024-03-18,92500
+EMP-041,Gabriel Costa,People Associate,People,OFF-MAN,EMP-008,2015-04-23,57500
+EMP-042,Jordan Reyes,Finance Associate,Finance,OFF-NYC,EMP-006,2017-10-23,84500
+EMP-043,Ivan Mueller,Consulting Associate,Consulting,OFF-BER,EMP-003,2019-03-24,87000
+EMP-044,Theo Romano,People Associate,People,OFF-SIN,EMP-008,2024-06-16,58500
+EMP-045,Theo Lopez,Senior Consulting Associate,Consulting,OFF-TOR,EMP-003,2016-01-03,101500
+EMP-046,Dmitri Park,Senior Finance Associate,Finance,OFF-NYC,EMP-006,2019-06-07,106000
+EMP-047,Chen Carter,Senior Sales Associate,Sales,OFF-SIN,EMP-004,2021-01-08,98000
+EMP-048,Noah Weber,Senior People Associate,People,OFF-SIN,EMP-030,2022-08-07,79000
+EMP-049,Omar Schmidt,Sales Associate,Sales,OFF-LON,EMP-004,2017-03-03,71500
+EMP-050,Pablo Fischer,Consulting Associate,Consulting,OFF-NYC,EMP-003,2017-12-16,83500
+EMP-051,Layla Schmidt,Engineering Manager,Engineering,OFF-LON,EMP-002,2022-06-01,139500
+EMP-052,Tariq Reyes,Operations Manager,Operations,OFF-SFO,EMP-005,2015-07-27,100000
+EMP-053,Saoirse Haddad,Finance Associate,Finance,OFF-TOR,EMP-006,2022-11-28,74500
+EMP-054,Zara Dubois,Operations Associate,Operations,OFF-SYD,EMP-052,2021-08-16,57000
+EMP-055,Sofia Larsson,Senior Engineering Associate,Engineering,OFF-BER,EMP-051,2015-01-22,108000
+EMP-056,Ethan Haddad,Senior Consulting Associate,Consulting,OFF-BER,EMP-003,2024-07-02,98500
+EMP-057,Rosa Conti,Operations Manager,Operations,OFF-TOR,EMP-005,2018-11-11,99500
+EMP-058,Aisha Tanaka,People Associate,People,OFF-NYC,EMP-030,2016-11-02,68500
+EMP-059,Wei Dimitrov,Senior Finance Associate,Finance,OFF-MAN,EMP-006,2015-12-16,92500
+EMP-060,Finn Larsson,Operations Associate,Operations,OFF-SFO,EMP-057,2017-05-10,62500
+EMP-061,Hiro Lopez,Consulting Manager,Consulting,OFF-NYC,EMP-003,2015-04-21,126000
+EMP-062,Hannah Conti,Finance Associate,Finance,OFF-NYC,EMP-006,2016-08-21,81000
+EMP-063,Emma Walsh,Senior Consulting Associate,Consulting,OFF-BER,EMP-061,2023-04-05,105500
+EMP-064,Wei Flores,Engineering Associate,Engineering,OFF-SYD,EMP-051,2024-01-07,87500
+EMP-065,Sofia Mueller,Sales Associate,Sales,OFF-NYC,EMP-004,2015-04-08,73000
+EMP-066,Finn Vargas,Senior People Associate,People,OFF-NYC,EMP-008,2019-08-18,81000
+EMP-067,Mia Okafor,Operations Manager,Operations,OFF-LON,EMP-005,2016-11-15,95000
+EMP-068,Layla Tanaka,People Manager,People,OFF-MAN,EMP-007,2015-02-05,103000
+EMP-069,Yuki Petrov,Sales Associate,Sales,OFF-SFO,EMP-004,2015-05-03,79500
+EMP-070,Aisha Carter,Sales Associate,Sales,OFF-BER,EMP-004,2019-09-07,78500
+EMP-071,Gabriel Andersson,Finance Associate,Finance,OFF-BER,EMP-006,2017-10-15,71500
+EMP-072,Ava Ivanov,People Associate,People,OFF-BER,EMP-030,2017-02-18,65000
+EMP-073,Emma Oliveira,Finance Associate,Finance,OFF-SFO,EMP-006,2022-07-22,82000
+EMP-074,Lena Becker,Finance Associate,Finance,OFF-TOR,EMP-006,2018-12-17,82500
+EMP-075,Kai Singh,Engineering Manager,Engineering,OFF-LON,EMP-002,2016-07-04,141000
+EMP-076,Aisha Flores,Operations Manager,Operations,OFF-SIN,EMP-005,2023-04-16,98000
+EMP-077,Clara Haddad,Engineering Associate,Engineering,OFF-SYD,EMP-051,2020-06-18,88500
+EMP-078,Viktor Romano,Senior Operations Associate,Operations,OFF-NYC,EMP-057,2017-06-07,75500
+EMP-079,Gabriel Romano,Senior Sales Associate,Sales,OFF-BER,EMP-004,2018-07-08,96000
+EMP-080,Nora Yamamoto,Senior Operations Associate,Operations,OFF-SFO,EMP-067,2022-10-14,82500
+EMP-081,Taylor Becker,Sales Manager,Sales,OFF-MAN,EMP-004,2018-11-08,116000
+EMP-082,Zara Rossi,Senior Operations Associate,Operations,OFF-MAN,EMP-057,2018-11-07,74500
+EMP-083,Diego Romano,Engineering Manager,Engineering,OFF-NYC,EMP-002,2024-03-11,136500
+EMP-084,Felix Mueller,Consulting Manager,Consulting,OFF-BER,EMP-003,2018-04-05,130500
+EMP-085,Nina Novak,Senior People Associate,People,OFF-SIN,EMP-008,2023-03-07,85000
+EMP-086,Ethan Mueller,People Associate,People,OFF-SYD,EMP-030,2024-12-13,57000
+EMP-087,Sofia Dasgupta,People Associate,People,OFF-SIN,EMP-008,2017-08-09,61000
+EMP-088,Viktor Murphy,People Manager,People,OFF-SIN,EMP-007,2019-04-08,94500
+EMP-089,Finn Okafor,Senior Sales Associate,Sales,OFF-BER,EMP-081,2015-05-21,100500
+EMP-090,Gabriel Hassan,Senior Sales Associate,Sales,OFF-LON,EMP-081,2021-11-26,87000
+EMP-091,Mateo Mueller,Consulting Manager,Consulting,OFF-BER,EMP-003,2020-05-10,119500
+EMP-092,Amara Petrov,Operations Associate,Operations,OFF-BER,EMP-057,2016-06-13,61500
+EMP-093,Wei Romano,People Associate,People,OFF-BER,EMP-068,2020-07-09,60500
+EMP-094,Finn Cohen,Finance Associate,Finance,OFF-SFO,EMP-006,2016-06-24,80500
+EMP-095,Anya Oliveira,Operations Associate,Operations,OFF-LON,EMP-052,2024-04-15,58000
+EMP-096,Ethan Fischer,Senior Consulting Associate,Consulting,OFF-SFO,EMP-084,2023-10-27,105500
+EMP-097,Taylor Park,Consulting Associate,Consulting,OFF-NYC,EMP-084,2019-05-21,74000
+EMP-098,Ingrid Hassan,Engineering Associate,Engineering,OFF-MAN,EMP-051,2023-08-12,83500
+EMP-099,Ava Moretti,People Manager,People,OFF-BER,EMP-007,2015-05-09,97500
+EMP-100,Kai Mueller,Sales Associate,Sales,OFF-MAN,EMP-081,2019-02-20,71000
+EMP-101,Sofia Hassan,Senior People Associate,People,OFF-SFO,EMP-068,2021-05-27,86500
+EMP-102,Tariq Flores,Finance Associate,Finance,OFF-SYD,EMP-006,2020-12-27,73000
+EMP-103,Maya Moretti,People Associate,People,OFF-NYC,EMP-088,2016-10-06,69500
+EMP-104,Liam Carter,People Associate,People,OFF-SYD,EMP-088,2020-08-01,67500
+EMP-105,Gabriel Mueller,Senior Engineering Associate,Engineering,OFF-LON,EMP-051,2024-10-16,115000
+EMP-106,Diego Novak,Operations Associate,Operations,OFF-LON,EMP-057,2015-06-14,60000
+EMP-107,Ingrid Flores,Sales Associate,Sales,OFF-SIN,EMP-081,2019-07-11,69500
+EMP-108,Alex Garcia,Sales Associate,Sales,OFF-MAN,EMP-081,2020-10-09,76500
+EMP-109,Diego Smith,Senior Operations Associate,Operations,OFF-LON,EMP-052,2019-05-04,87000
+EMP-110,Liam Flores,Operations Associate,Operations,OFF-LON,EMP-052,2016-12-24,71500
+EMP-111,Taylor Mueller,People Associate,People,OFF-SFO,EMP-008,2015-12-18,68500
+EMP-112,Bruno Vargas,Senior Consulting Associate,Consulting,OFF-SYD,EMP-091,2023-01-18,106500
+EMP-113,Kai Murphy,Engineering Associate,Engineering,OFF-LON,EMP-015,2019-10-08,94000
+EMP-114,Jordan Okafor,Senior Engineering Associate,Engineering,OFF-SIN,EMP-010,2019-09-20,103500
+EMP-115,Chen Bauer,Operations Manager,Operations,OFF-NYC,EMP-005,2023-08-27,104500
+EMP-116,Bruno Smith,People Associate,People,OFF-BER,EMP-099,2015-08-07,64500
+EMP-117,Rosa Rossi,Consulting Associate,Consulting,OFF-SIN,EMP-061,2018-01-09,79000
+EMP-118,Layla Garcia,Senior Consulting Associate,Consulting,OFF-SYD,EMP-061,2018-06-25,96500
+EMP-119,Morgan Costa,Sales Manager,Sales,OFF-BER,EMP-004,2021-05-04,114000
+EMP-120,Zara Kim,Consulting Associate,Consulting,OFF-LON,EMP-061,2016-06-09,77500
+EMP-121,Ivan Oliveira,Senior Engineering Associate,Engineering,OFF-LON,EMP-075,2018-03-03,107500
+EMP-122,Pablo Lindqvist,Engineering Associate,Engineering,OFF-SFO,EMP-083,2020-11-09,86000
+EMP-123,Elena Smith,People Manager,People,OFF-TOR,EMP-007,2020-03-25,98500
+EMP-124,Ava Schmidt,Sales Manager,Sales,OFF-SYD,EMP-004,2015-09-24,106000
+EMP-125,Ethan Dimitrov,Senior Engineering Associate,Engineering,OFF-SIN,EMP-010,2018-03-10,111500
+EMP-126,Sam Adeyemi,Operations Manager,Operations,OFF-LON,EMP-005,2016-06-16,103500
+EMP-127,Felix Carter,Senior People Associate,People,OFF-NYC,EMP-030,2015-08-03,84000
+EMP-128,Layla Dubois,Consulting Manager,Consulting,OFF-SFO,EMP-003,2020-05-04,123500
+EMP-129,Nora Bauer,Senior Finance Associate,Finance,OFF-SFO,EMP-006,2022-04-16,104500
+EMP-130,Alex Oliveira,Consulting Associate,Consulting,OFF-MAN,EMP-084,2024-05-22,77000
+EMP-131,Amara Vargas,Sales Associate,Sales,OFF-SYD,EMP-081,2020-06-11,73000
+EMP-132,Mateo Dimitrov,Engineering Associate,Engineering,OFF-SIN,EMP-015,2019-03-23,91500
+EMP-133,Diego Marino,Operations Associate,Operations,OFF-SIN,EMP-126,2023-02-28,59000
+EMP-134,Dmitri Yamamoto,Sales Associate,Sales,OFF-LON,EMP-124,2022-04-28,71000
+EMP-135,Marco Haddad,Senior Finance Associate,Finance,OFF-NYC,EMP-006,2023-07-03,92000
+EMP-136,Anya Lopez,Senior Engineering Associate,Engineering,OFF-TOR,EMP-010,2018-11-28,115000
+EMP-137,Kai Kowalski,Senior Sales Associate,Sales,OFF-SFO,EMP-081,2015-08-18,94000
+EMP-138,Rosa Carter,Senior Engineering Associate,Engineering,OFF-BER,EMP-025,2017-10-23,109000
+EMP-139,Priya Rossi,Senior Operations Associate,Operations,OFF-MAN,EMP-057,2024-08-27,81000
+EMP-140,Emma Hassan,Operations Associate,Operations,OFF-TOR,EMP-057,2022-06-26,65000
+EMP-141,Amara Patel,Senior Sales Associate,Sales,OFF-SFO,EMP-124,2019-03-16,89000
+EMP-142,Lucas Park,People Associate,People,OFF-SIN,EMP-068,2021-05-05,68500
+EMP-143,Hiro Moretti,Senior Engineering Associate,Engineering,OFF-BER,EMP-010,2015-03-06,113500
+EMP-144,Bruno Patel,Senior Engineering Associate,Engineering,OFF-BER,EMP-051,2016-12-03,105500
+EMP-145,Anya Dasgupta,Finance Associate,Finance,OFF-BER,EMP-006,2024-10-07,73000
+EMP-146,Ingrid Bauer,Senior Sales Associate,Sales,OFF-SFO,EMP-081,2015-04-20,94500
+EMP-147,Raj Haddad,Senior Operations Associate,Operations,OFF-LON,EMP-052,2023-10-18,82000
+EMP-148,Kai Dimitrov,Sales Associate,Sales,OFF-LON,EMP-119,2015-02-12,66500
+EMP-149,Pablo Nakamura,Senior People Associate,People,OFF-SYD,EMP-123,2016-11-28,82000
+EMP-150,Saoirse Singh,Senior Consulting Associate,Consulting,OFF-SIN,EMP-091,2021-03-03,102000

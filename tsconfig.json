@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    // Eve's dev-runtime (used by `eve dev` and `eve eval`) compiles each agent
+    // entrypoint and imports it as a `.ts` module, but it does NOT remap a
+    // sibling `./foo.js` specifier back to `./foo.ts`. So sandbox.ts imports its
+    // backend with an explicit `.ts` extension; this option allows that.
+    "allowImportingTsExtensions": true
+  },
+  "include": ["agent/**/*.ts", "lib/**/*.ts", "scripts/**/*.mts", "test/**/*.ts", "evals/**/*.ts", ".eve/**/*.d.ts"]
+}

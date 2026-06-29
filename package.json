@@ -1,0 +1,55 @@
+{
+  "name": "vercel-eve-firecracker-agent",
+  "version": "1.0.0",
+  "description": "Local sandboxed data-analysis AI agent: Eve + ForgeVM Firecracker microVMs + local Ollama.",
+  "type": "module",
+  "private": true,
+  "imports": {
+    "#*": "./agent/*",
+    "#evals/*": "./evals/*"
+  },
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "dev": "eve dev",
+    "dev:stop": "bash scripts/dev-stop.sh",
+    "start": "eve start",
+    "build": "eve build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:it": "RUN_FORGEVM_IT=1 vitest run",
+    "it1:smoke": "tsx scripts/iteration1-forgevm-smoke.mts",
+    "gen:org-data": "tsx scripts/gen-org-data.mts",
+    "eval": "bash scripts/eval.sh",
+    "stop": "pnpm dev:stop; pnpm forgevm:stop; docker compose stop ollama jaeger",
+    "clean": "rm -rf .workflow-data .eve .nitro .output && pnpm forgevm:clean",
+
+    "ollama:up": "docker compose up -d ollama",
+    "ollama:pull": "docker compose exec ollama ollama pull qwen2.5:7b-instruct",
+    "ollama:model": "docker compose exec -T ollama sh -c 'cat > /tmp/Modelfile && ollama create data-analyst -f /tmp/Modelfile' < ollama/data-analyst.Modelfile",
+
+    "forgevm:serve": "bash scripts/forgevm-serve.sh",
+    "forgevm:stop": "bash scripts/forgevm-stop.sh",
+    "forgevm:build-image": "bash scripts/forgevm-build-image.sh",
+    "forgevm:clean": "tsx scripts/forgevm-clean.mts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "3.0.0-beta.57",
+    "@opentelemetry/api": "^1.9.1",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.219.0",
+    "@opentelemetry/sdk-node": "^0.219.0",
+    "@vercel/connect": "0.2.2",
+    "ai": "7.0.0-beta.178",
+    "eve": "^0.11.7",
+    "forgevm": "0.1.1",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "tsx": "^4.22.4",
+    "typescript": "^5.5.3",
+    "vitest": "^4.1.9"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
